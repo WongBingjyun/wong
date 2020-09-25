@@ -14,6 +14,8 @@ while True:
                 print(chr(ord('a')+(ord(word)-ord('a')+num)%26),end="")
             elif 'A'<=word<='Z':
                 print(chr(ord('A')+(ord(word)-ord('A')+num)%26),end="")
+            elif '0'<=word<='9':
+                print(chr(ord("0")+(ord(word)-ord("0")+num)%10),end="")
             else:
                 print(word,end="")
     elif i==2:
@@ -24,8 +26,10 @@ while True:
                 print(chr(ord('a')+(ord(word)-ord('a')-num)%26),end="")
             elif 'A'<=word<='Z':
                 print(chr(ord('A')+(ord(word)-ord('A')-num)%26),end="")
+            elif '0'<=word<='9':
+                print(chr(ord("0")+(ord(word)-ord("0")-num)%10),end="")
             else:
-                print(c,end="")
+                print(word,end="")
     elif i==3:
         break
     else:
